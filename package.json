@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
+    "build:single": "vite build --mode single",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist dist-single",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

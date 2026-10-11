@@ -17,6 +17,7 @@ npm run dev    # http://localhost:3000
 | ----------------- | ------------------------------------------------------- |
 | `npm run dev`     | Lab with hot reload                                     |
 | `npm run build`   | Production build to `dist/`, plus a ready pen in `dist/codepen/` |
+| `npm run build:single` | The whole lab as one self-contained file: `dist-single/index.html` |
 | `npm run preview` | Serve `dist/`                                           |
 | `npm run lint`    | Type-check                                              |
 
