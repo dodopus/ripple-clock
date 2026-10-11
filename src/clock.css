@@ -1,0 +1,49 @@
+/* Shared by the lab (index.css) and the CodePen export (pen/pen.css). */
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Crisp rendering */
+canvas {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes digitMorph {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(3px);
+    filter: blur(2px);
+  }
+  60% {
+    opacity: 0.95;
+    transform: scale(1.04) translateY(-0.5px);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+  }
+}
+
+.animate-digitMorph {
+  animation: digitMorph 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -1,0 +1,11 @@
+/*
+ * Stylesheet for the CodePen export. Tailwind only scans the files the bare
+ * clock renders, so the pen's CSS panel carries just the utilities it uses.
+ */
+@import "tailwindcss" source(none);
+@import "../clock.css";
+
+@source "./PenClock.tsx";
+@source "../components/AcousticCircleCanvas.tsx";
+@source "../components/RollingDigitalTime.tsx";
+@source "../components/MorphingVectorDigit.tsx";

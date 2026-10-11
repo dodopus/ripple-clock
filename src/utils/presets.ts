@@ -1,4 +1,7 @@
 import { ClockPreset, RingLayer, VariationId } from '../types/clock';
+import { DEFAULT_PRIMARY_RING } from './rings';
+
+export { DEFAULT_PRIMARY_RING };
 
 export const CUTE_NEON_PALETTE = [
   { name: 'Sakura Blush', hex: '#ff94b8', glow: 'rgba(255, 148, 184, 0.45)' },
@@ -14,23 +17,6 @@ export const CUTE_NEON_PALETTE = [
   { name: 'Slate Smoke', hex: '#64748b', glow: 'rgba(100, 116, 139, 0.35)' },
   { name: 'Pure Charcoal', hex: '#27272a', glow: 'rgba(39, 39, 42, 0.25)' },
 ];
-
-export const DEFAULT_PRIMARY_RING: RingLayer = {
-  id: 'ring-primary',
-  name: 'Primary Ring',
-  visible: true,
-  color: '#18181b',
-  gradientType: 'solid',
-  secondaryColor: '#67e8f9',
-  timeOffset: 0,
-  radiusOffset: 0,
-  offsetX: 0,
-  offsetY: 0,
-  strokeWidth: 1.5,
-  blur: 0,
-  opacity: 1.0,
-  blendMode: 'source-over',
-};
 
 export const CLOCK_PRESETS: ClockPreset[] = [
   {

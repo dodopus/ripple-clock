@@ -16,6 +16,7 @@ import {
   CUTE_NEON_PALETTE,
   DEFAULT_PRIMARY_RING,
 } from '../utils/presets';
+import { ExportBar } from '../pen/ExportBar';
 
 interface Props {
   isOpen?: boolean;
@@ -379,9 +380,6 @@ export const SettingsDrawer: React.FC<Props> = ({
                     ({activeWavesCount} in medium · {rings.length} rings)
                   </span>
                 </div>
-                <p className="text-[10px] text-zinc-400 font-mono mt-0.5">
-                  CodePen: remove &lt;SettingsDrawer /&gt; for standalone
-                </p>
               </div>
 
               <div className="flex items-center gap-1.5">
@@ -401,6 +399,8 @@ export const SettingsDrawer: React.FC<Props> = ({
                 </button>
               </div>
             </div>
+
+            <ExportBar config={{ variation: selectedVariation, params }} />
 
             {/* Scrollable Collapsible Sections */}
             <div className="overflow-y-auto px-4 py-3 space-y-3 flex-1 scrollbar-thin">

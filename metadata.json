@@ -1,6 +1,0 @@
-{
-  "name": "Acoustic Horizon Clock & Morph Lab",
-  "description": "Minimalist Westworld-inspired acoustic circumference clock featuring 9 ripple animation studies and seamless fluid weather morphing.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

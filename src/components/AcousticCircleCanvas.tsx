@@ -22,7 +22,7 @@ import {
   isColorDark,
 } from '../utils/math';
 import { RollingDigitalTime } from './RollingDigitalTime';
-import { DEFAULT_PRIMARY_RING } from '../utils/presets';
+import { DEFAULT_PRIMARY_RING } from '../utils/rings';
 
 interface Props {
   variation: VariationId;
